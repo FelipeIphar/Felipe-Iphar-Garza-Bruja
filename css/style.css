@@ -3,8 +3,8 @@
 *{
     font-family: Roboto, sans-serif;
     color: white;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
 #nav{
     grid-area: nav;
@@ -24,7 +24,6 @@ body {
     "nav"
     "main"
     "foot";
-    row-gap: 5px;
 }
 /**---Nav---**/
 nav{
@@ -55,9 +54,6 @@ nav{
     text-decoration: none;
     color: white;
     padding: 2px;
-}
-.nav__list li a:hover{
-    background-color: #cc3600;
 }
 /**---Main---**/
 .flex{
@@ -270,4 +266,42 @@ footer img {
     .prod__div{
         width: 30%;
     }
+}
+/**---animaciones/transformaciones/transiciones**/
+.nav__list li:hover{
+    transition: all 1s;
+    transform: scale(1.1);
+    background-color: #a82d01;
+}
+.article__img:hover, .prod__img:hover{
+    transform: scale(1.15);
+    transition: all 1s;
+}
+.main__title{
+    background-color: #af0000;
+    animation-name: fondo_camb;
+    animation-duration: 12s;
+    animation-timing-function: linear;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+@keyframes fondo_camb{
+    33%{background-color: #b47b01;}
+    66%{background-color: #a50166;}
+    100%{background-color: #af0000}
+}
+.pop_up1{
+    animation: pop_up1 3s linear 2s 1 normal none;
+}
+@keyframes pop_up1{
+    33%{background-color: #af2300;}
+    66%{background-color: #af0000;}
+}
+.pop_up2{
+    animation: pop_up2 3s linear 6s 1 normal none;
+}
+@keyframes pop_up2{
+    33%{background-color: #af2300;}
+    66%{background-color: #af0000;}
 }
