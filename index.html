@@ -1,53 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.jpg">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Mi css -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.jpg">
     <title>Garza Bruja</title>
-</head>
-<body>
-    <header id="nav">
-        <nav>
-            <a href="index.html">
-                <img src="img/logo.jpg" alt="Logo de Garza Bruja" class="nav__logo">
-            </a>
-            <ul class="nav__list">
-                <li><a href="pages/galeria.html">Galeria</a></li>
-                <li><a href="pages/productos.html">Productos</a></li>
-                <li><a href="pages/procesocreativo.html">Proceso creativo</a></li>
-                <li><a href="pages/contactanos.html">Contactanos</a></li>
+  </head>
+  <body>
+    <!-- Inicia nav -->
+    <nav class="navbar navbar-expand-md navbar-light bg-orange">
+        <div class="container-fluid nav">
+          <a class="navbar-brand" href="index.html"><img src="img/logo.jpg" alt="Logo de garza Bruja" id="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="pages/galeria.html">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/procesocreativo.html">Proceso creativo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contactanos.html">Contactanos</a>
+              </li>
             </ul>
-        </nav>
-    </header>
-    <main id="main">
+          </div>
+        </div>
+    </nav>
+      <!-- Termina nav -->
+      <!-- Comienza main -->
+      <main>
         <h1 class="main__title">Garza Bruja, cuadernos y agendas</h1>
-        <img class="index__img" src="img/agenda-det1.jpg" alt="Foto de agenda 2022">
-        <img class="index__img" src="img/agenda-det3.jpg" alt="Foto de agenda 2022">
-        <article class="article">
-            <div class="subarticle">
-                <h2 class="title2">Subtítulo</h2>
-                <p class="parr">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odit itaque quae nam numquam maiores quos? Voluptatum soluta fuga saepe animi maiores officia eos rerum porro atque harum. Reprehenderit, obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor inventore quisquam consequuntur dolorum placeat non et sequi ad amet totam harum iure excepturi, voluptate veritatis sunt sint facere quis voluptatibus!
-                </p>
+        <!-- Carrusel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="subarticle">
-                <h2 class="title2">Subtítulo</h2>
-                <p class="parr">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aspernatur, beatae numquam impedit soluta aliquam iusto, suscipit earum sit esse ad sed nostrum. Assumenda saepe suscipit perferendis, ab itaque exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro placeat explicabo facilis distinctio molestiae? Perspiciatis provident earum, at iure temporibus amet voluptas unde vel enim in dicta et accusantium ab! Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium totam distinctio sed consectetur nesciunt molestiae odio repudiandae mollitia, iste laudantium ullam ea nulla exercitationem optio aspernatur eligendi vel laboriosam ratione!
-                </p>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/agenda-det--1.jpg" class="d-block w-100" alt="Foto en detalle de Agenda 2022">
+              </div>
+              <div class="carousel-item">
+                <img src="img/agenda-det--2.jpg" class="d-block w-100" alt="Foto en detalle de Agenda 2022">
+              </div>
+              <div class="carousel-item">
+                <img src="img/agenda-det--3.jpg" class="d-block w-100" alt="Foto en detalle de Agenda 2022">
+              </div>
             </div>
-            <div class="subarticle">
-                <h2 class="title2">Subtítulo</h2>
-                <p class="parr">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ab soluta fuga dolores, consequatur nulla. Nesciunt, reprehenderit doloremque iste fugiat distinctio libero dolorum illum, quaerat beatae laborum praesentium nihil. Voluptates.
-                </p>
-            </div>
-        </article>
-    </main>
-    <footer id="foot">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <!-- Fin carrusel -->
+        <!-- Articulos -->
+        <div class="container-fluid">
+              <div class="row article p-1 m-1">
+                  <article class="col-sm-12 col-md-4 subarticle">
+                      <h2 class="title2">Subtítulo</h2>
+                          <p class="parr">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odit itaque quae nam numquam maiores quos? Voluptatum soluta fuga saepe animi maiores officia eos rerum porro atque harum. Reprehenderit, obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor inventore quisquam consequuntur dolorum placeat non et sequi ad amet totam harum iure excepturi, voluptate veritatis sunt sint facere quis voluptatibus! 
+                  </article>
+                  <article class="col-sm-12 col-md-4 subarticle">
+                      <h2 class="title2">Subtítulo</h2>
+                          <p class="parr">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odit itaque quae nam numquam maiores quos? Voluptatum soluta fuga saepe animi maiores officia eos rerum porro atque harum. Reprehenderit, obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor inventore quisquam consequuntur dolorum placeat non et sequi ad amet totam harum iure excepturi, voluptate veritatis sunt sint facere quis voluptatibus!
+                          </p>
+                  </article>
+                  <article class="col-sm-12 col-md-4 subarticle">
+                      <h2 class="title2">Subtítulo</h2>
+                          <p class="parr">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odit itaque quae nam numquam maiores quos? Voluptatum soluta fuga saepe animi maiores officia eos rerum porro atque harum. Reprehenderit, obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor inventore quisquam consequuntur dolorum placeat non et sequi ad amet totam harum iure excepturi, voluptate veritatis sunt sint facere quis voluptatibus!
+                          </p>
+                  </article>
+              </div>
+        </div>
+      </main>
+      <!-- Termina main -->
+      <footer id="foot">
         <a href="https://www.instagram.com/garza.bruja/" target="_blank">
             <img src="img/instalogo.png" alt="Instagram">
         </a>
@@ -55,5 +102,8 @@
             <img id="face" src="img/facelogo.png" alt="Facebook">
         </a>
     </footer>
-</body>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
 </html>

@@ -1,67 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../img/favicon.jpg">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Mi css -->
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/favicon.jpg">
+
     <title>Contactanos</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <a href="../index.html">
-                <img src="../img/logo.jpg" alt="Logo de Garza Bruja" class="nav__logo">
-            </a>
-            <ul class="nav__list">
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="procesocreativo.html">Proceso creativo</a></li>
-                <li><a href="contactanos.html">Contactanos</a></li>
+  </head>
+  <body>
+    <!-- Inicia nav -->
+    <nav class="navbar navbar-expand-md navbar-light bg-orange">
+        <div class="container-fluid nav">
+          <a class="navbar-brand" href="../index.html"><img src="../img/logo.jpg" alt="Logo de garza Bruja" id="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="galeria.html">Galería</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="procesocreativo.html">Proceso creativo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactanos.html">Contactanos</a>
+              </li>
             </ul>
-        </nav>
-    </header>
-    <main>
+          </div>
+        </div>
+      </nav>
+      <!-- Termina nav -->
+      <!-- Comienza main -->
+      <main>
         <h1 class="main__title">Contactanos</h1>
-        <section class="form">
-            <form action="envio.php">
-                <label for="name">Nombre y apellido</label>
-                <input type="text" id="name">
-                <label for="telef">Teléfono</label>
-                <input type="text" id="telef">
-                <fieldset>
-                    <legend>Info de tu pedido</legend>
-                    <label for="cuadernos">Cuaderno/s</label>
-                    <input type="checkbox" id="cuadernos">
-                    <label for="agendas">Agenda/s</label>
-                    <input type="checkbox" id="agendas">
-                    <label for="personalizado">Personalizado</label>
-                    <input type="checkbox" id="personalizado">
-                </fieldset>
-                <fieldset>
-                    <legend>Tu ubicación</legend>
-                    <label for="localidad">Localidad</label>
-                    <select name="" id="">
-                        <option value="cordoba">Cordoba Capital</option>
-                        <option value="corcovado">Corcovado (Chubut)</option>
-                        <option value="esquel">Esquel (Chubut)</option>
-                    </select>
-                </fieldset>
+        <form class="form">
+            <div class="mb-3">
+              <p><strong>Tu información</strong></p>
+              <label for="name" class="form-label">Nombre y apellido</label>
+              <input type="text" class="form-control mb-1" id="name">
+              <label for="cellphone" class="form-label">Teléfono</label>
+              <input type="text" class="form-control mb-1" id="cellphone">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Localidad en la que vivís</option>
+                <option class="black-text" value="1">Esquel, Chubut</option>
+                <option class="black-text" value="2">Corcovado, Chubut</option>
+                <option class="black-text" value="3">Córdoba Capital</option>
+              </select>
+            </div>
+            <div class="mb-3 flex-vertical">
+                <p><strong>Info de tu pedido</strong></p>
+                <label for="cuadernos">Cuaderno/s</label>
+                <input type="checkbox" id="cuadernos">
+                <label for="agendas">Agenda/s</label>
+                <input type="checkbox" id="agendas">
+                <label for="personalizado">Personalizado</label>
+                <input type="checkbox" id="personalizado">
+            </div>
+            <div class="mb-3">
                 <label for="comentario">Ingresá el código de los productos que querés comprar (los podés encontrar en <a href="productos.html" target="_blank">Productos</a>) o contanos qué tenes en mente si buscas un producto personalizado</label>
-                <textarea name="comentario" id=""></textarea>
-                <input class="form__button" type="reset" value="Cancelar">
-                <input class="form__button" type="submit" value="Enviar">
-            </form>
-        </section>
-    </main>
-    <footer>
+            <input type="text" class="form-control mb-1" id="comentario"></input>
+            </div>
+            <button type="reset" class="btn btn-primary">Cancelar</button>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </main>
+      <!-- Termina main -->
+      <footer id="foot">
         <a href="https://www.instagram.com/garza.bruja/" target="_blank">
             <img src="../img/instalogo.png" alt="Instagram">
         </a>
         <a href="https://www.facebook.com/garzabruja" target="_blank">
             <img id="face" src="../img/facelogo.png" alt="Facebook">
         </a>
-    </footer>
-</body>
+      </footer>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
 </html>
