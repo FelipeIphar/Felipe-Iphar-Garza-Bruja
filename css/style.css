@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-/**---General---**/
+/**============General============**/
 *{
     font-family: Roboto, sans-serif;
     color: white;
@@ -9,6 +9,7 @@
 body {
     background-color: #d28e2c;
 }
+/**============Nav============**/
 #navbarSupportedContent ul li a{
     color: white;
     padding: 2px;
@@ -32,6 +33,7 @@ body {
     padding: 0px;
     margin: 0px;
 }
+/**============Main============**/
 .main__title{
     font-weight: bold;
     font-style: italic;
@@ -47,18 +49,11 @@ body {
     margin: auto;
     margin-bottom: 10px;
 }
-.article{
-    width: 100%;
-    height: auto;
-    background-color: #d33b04;
-    display: flex;
-    justify-content: center;
-}
 .article-flex{
     display: flex;
     justify-content: center;
     flex-flow: wrap;
-    width: 95%;
+    width: 97%;
     height: auto;
     padding: 5px auto;
     margin: 5px auto;
@@ -67,7 +62,7 @@ body {
 .subarticle{
     display: inline-block;
     height: auto;
-    width: 90%;
+    width: 95%;
     background-color: #a82d01;
     margin: 10px 5px;
     padding: 5px;
@@ -87,14 +82,6 @@ body {
     display: block;
     margin: 10px auto;
 }
-.centrado{
-    display: flex;
-    justify-content: center;
-    height: auto;
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-}
 .article__titles{
     width: 100%;
     display: flex;
@@ -113,11 +100,29 @@ body {
     width: 85%;
     margin: 1rem;
 }
+.article__img:hover{
+    transform: scale(1.05);
+    transition: all 1s;
+}
+/**============Grid de productos============**/
+#prod-fr{
+    grid-area: prod-fr;
+}
+#table-fr{
+    grid-area: table-fr;
+}
+.grid-prod{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "prod-fr table-fr";
+}
 .side-tables{
-    width: 100%;
-    margin: 10px 0px;
+    width: 98%;
+    margin: 5px 0px;
     position: sticky;
-    top: 2vh;
+    top: 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -127,30 +132,27 @@ body {
     font-size: medium;
 }
 .table td, .table th{
+    text-align: center;
     font-size: x-small;
     padding: 0px;
     padding-left: 1vh;
 }
-.prod h2{
-    font-size: large;
-}
-.prod__div{
-    display: flex;
-    flex-direction: column;
+.card{
     width: 100%;
+    margin-bottom: 5px;
 }
-.prod__img{
-    width: 100%;
-    height: auto;
-    display: flex;
-    margin: auto;
+.card-body{
+    background-color: #d33b04;
 }
-.prod__cod{
+.card-text{
     text-align: center;
-    font-weight: lighter;
-    font-size: small;
-    padding-bottom: 8px;
 }
+.article-column{
+    background-color: #d33b04;
+    margin: 5px;
+    padding: auto;
+}
+/**============Formulario============**/
 .form{
     display: block;
     background-color: #d33b04;
@@ -178,8 +180,12 @@ body {
 }
 .form button{
     margin: 10px 5px;
+    background-color: white;
 }
-/** Footer **/
+.form button:hover{
+    background-color: rgb(226, 226, 226);
+}
+/**============Footer============**/
 footer {
     background-color: #af0000;
     height: 7vh;
@@ -194,13 +200,15 @@ footer img {
 #face{
     background-color: white;
 }
-/** Media Queries **/
-@media only screen and (min-width: 576px){
-    .navbar-nav{
-        width: 65%;
-        justify-content: space-around;
-        font-size: large;
+/**============Media Queries============**/
+@media only screen and (min-width: 360px){
+    .grid-prod{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: 
+        "prod-fr prod-fr table-fr";
     }
+}
+@media only screen and (min-width: 576px){
     .main__title{
         font-size: x-large;
     }
@@ -212,20 +220,18 @@ footer img {
         padding: 0vh 1vh;
     }
     .article-flex{
-        height: auto;
         justify-content: space-around;
     }
-    .subarticle{
-        width: 30%;
-    }
-    .prod__div{
+    .card{
         width: 45%;
-    }
-    .prod h2{
-        font-size: x-large;
     }
 }
 @media only screen and (min-width: 768px){
+    .navbar-nav{
+        width: 65%;
+        justify-content: space-around;
+        font-size: large;
+    }
     .carousel{
         width: 90%;
     }
@@ -236,9 +242,16 @@ footer img {
         display: flex;
         justify-content: space-evenly;
     }
-    
+    .subarticle{
+        width: 30%;
+    }
     .article__img{
         width: 45%;
+    }
+    .grid-prod{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: 
+        "prod-fr prod-fr prod-fr table-fr";
     }
 }
 @media only screen and (min-width: 992px){
@@ -253,4 +266,12 @@ footer img {
     }
 }
 @media only screen and (min-width: 1200px){
+    .grid-prod{
+        grid-template-columns: repeat(5,1fr);
+        grid-template-areas: 
+        "prod-fr prod-fr prod-fr prod-fr table-fr";
+    }
+    .card{
+        width: 30%;
+    }
 }
