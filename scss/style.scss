@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/**============General============**/
+*{
+    font-family: Roboto, sans-serif;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+@import "_var";
+@import "_nav";
+@import "_main";
+@import "_footer";
+@import "_mediaQueries";

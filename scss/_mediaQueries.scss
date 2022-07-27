@@ -1,0 +1,75 @@
+/**============Media Queries============**/
+@media only screen and (min-width: 360px){
+    .grid-prod{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: 
+        "prod-fr prod-fr table-fr";
+    }
+}
+@media only screen and (min-width: 576px){
+    .main__title{
+        font-size: x-large;
+    }
+    .side-tables h2{
+        font-size: larger;
+    }
+    .table td, .table th{
+        font-size: small;
+        padding: 0vh 1vh;
+    }
+    .article-flex{
+        justify-content: space-around;
+    }
+    .card{
+        width: 45%;
+    }
+}
+@media only screen and (min-width: 768px){
+    .navbar-nav{
+        width: 65%;
+        justify-content: space-around;
+        font-size: large;
+    }
+    .carousel{
+        width: 90%;
+    }
+    .article{
+        width: 98%;
+        height: auto;
+        background-color: #d33b04;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .subarticle{
+        width: 30%;
+    }
+    .article__img{
+        width: 45%;
+    }
+    .grid-prod{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: 
+        "prod-fr prod-fr prod-fr table-fr";
+    }
+}
+@media only screen and (min-width: 992px){
+    .carousel{
+        width: 85%;
+    }
+    .navbar-nav{
+        width: 50%;
+    }
+    .parr{
+        text-align: justify;
+    }
+}
+@media only screen and (min-width: 1200px){
+    .grid-prod{
+        grid-template-columns: repeat(5,1fr);
+        grid-template-areas: 
+        "prod-fr prod-fr prod-fr prod-fr table-fr";
+    }
+    .card{
+        width: 30%;
+    }
+}

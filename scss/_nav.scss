@@ -1,0 +1,22 @@
+/**============Nav============**/
+#navbarSupportedContent ul li a{
+    color: white;
+    padding: 2px;
+    &:hover{
+        transition: all 1s;
+        transform: scale(1.05);
+        background-color: $bgColorHover;
+    }
+}
+.bg-orange{
+    background-color: $bgColor2;
+}
+.navbar-brand, .navbar, .nav{
+    padding: 0px;
+}
+.navbar-toggler{
+    margin-right: 10px;
+}
+#logo{
+    height: 11vh;
+}

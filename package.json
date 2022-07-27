@@ -1,0 +1,24 @@
+{
+  "name": "felipe-iphar-garza-bruja",
+  "version": "1.0.0",
+  "description": "Desafío Coder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+		"sass:watch": "sass --watch scss/style.scss  css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelipeIphar/Felipe-Iphar-Garza-Bruja.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FelipeIphar/Felipe-Iphar-Garza-Bruja/issues"
+  },
+  "homepage": "https://github.com/FelipeIphar/Felipe-Iphar-Garza-Bruja#readme",
+  "dependencies": {
+    "sass": "^1.54.0"
+  }
+}
