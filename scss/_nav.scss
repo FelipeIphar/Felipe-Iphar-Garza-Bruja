@@ -5,11 +5,11 @@
     &:hover{
         transition: all 1s;
         transform: scale(1.05);
-        background-color: $bgColorHover;
+        background-color: map-get($colores, $key: hover/oscuro);
     }
 }
 .bg-orange{
-    background-color: $bgColor2;
+    background-color: map-get($colores, $key: dos);
 }
 .navbar-brand, .navbar, .nav{
     padding: 0px;

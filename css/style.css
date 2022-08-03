@@ -53,24 +53,22 @@ body {
   margin-bottom: 10px;
 }
 
-.article-flex {
+.article-flex, .subarticle {
   display: flex;
-  justify-content: center;
-  flex-flow: wrap;
   width: 97%;
   height: auto;
-  padding: 5px auto;
   margin: 5px auto;
+  padding: 5px auto;
   background-color: #d33b04;
+  justify-content: center;
+  flex-flow: wrap;
 }
 
 .subarticle {
   display: inline-block;
-  height: auto;
-  width: 95%;
-  background-color: #a82d01;
   margin: 10px 5px;
   padding: 5px;
+  background-color: #a82d01;
 }
 .subarticle img {
   width: 70%;
@@ -243,7 +241,7 @@ footer img {
     font-size: small;
     padding: 0vh 1vh;
   }
-  .article-flex {
+  .article-flex, .subarticle {
     justify-content: space-around;
   }
   .card {
@@ -258,13 +256,6 @@ footer img {
   }
   .carousel {
     width: 90%;
-  }
-  .article {
-    width: 98%;
-    height: auto;
-    background-color: #d33b04;
-    display: flex;
-    justify-content: space-evenly;
   }
   .subarticle {
     width: 30%;

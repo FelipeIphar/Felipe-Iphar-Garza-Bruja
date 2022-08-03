@@ -3,3 +3,22 @@ $bgColor2: #d44d1c;
 $bgColor3: #d33b04;
 $bgColorHover: #a82d01;
 $bgColorFooter: #af0000;
+
+//  Mixins
+@mixin articles ($display, $width, $height, $margin, $padd, $bc){
+    display: $display;
+    width: $width;
+    height: $height;
+    margin: $margin;
+    padding: $padd;
+    background-color: $bc;
+}
+
+//  Maps
+$colores:(
+    "uno": #d28e2c,
+    "dos": #d44d1c,
+    "tres": #d33b04,
+    "hover/oscuro": #a82d01,
+    "footer": #af0000,
+);
