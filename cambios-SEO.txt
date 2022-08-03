@@ -1,0 +1,21 @@
+Para mejorar el SEO delsitio, procedí a:
+- Agregar descripciones cortas y keywords a cada página, según cuál era la función de cada una. Estas fueron:
+
+	Index:  descripción: Conoce nuestros cuadernos y agendas hechos a mano, con diseños de tapa inpsirados en su mayoría en la flora y fauna de la Patagonia argentina, pintados con acuarelas, con costuras a mano y más
+		keywords: cuadernos, agendas, artesanías, trabajo a mano, cosido a mano, acuarelas, Patagonia, naturaleza
+
+	Galería: descripción: Visita nuestra galería de fotos para explorar nuestros diseños, detalles de tapas y costuras, bocetos e inspiraciones de nuestros dibujos
+		 keywords: fotografías, imágenes, cuadernos, agendas, diseños, arte, dibujo, pintura
+
+	Productos:  descripción: Aquí podés explorar nuestro catálogo actualizado de los productos que tenemos en stock, junto con las especificaciones de dimensiones y precio de cada elemento
+		    keywords: catálogo, productos, especificaciones, tamaño, precios, stock
+
+	ProcesoCreativo:  descripción: ¿Buscas saber como se hacen nuestros cuadernos? Te mostramos nuestro proceso creativo, desde cómo nos inspiramos en la flora y fauna principalmente patagónica, pasando por los bocetos y el pintado a mano de las tapas, hasta los tipos de costuras y lomos que usamos
+			  keywords: artesanías, trabajo, proceso creativo, dibujo, pintado a mano, cosido a mano, inspiración
+
+	Contactanos:  descripción: Si ya sabés que querés comprar, te invitamos a llenar un rápido formulario con la información necesaria para ponerte en contacto con nosotros, y coordinar la entrega de tu compra lo más pronto posible
+		      keywords: contacto, comunicación, formulario, compra, datos, teléfono, mail
+
+
+- Cambié ligeramente los títulos de las páginas para que todos empiecen con "Garza Bruja"
+- Mejoré todos los alt de todas las fotos de las páginas index, galería, productos y proceso creativo para que sean más descriptivos
