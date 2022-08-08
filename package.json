@@ -1,7 +1,7 @@
 {
   "name": "felipe-iphar-garza-bruja",
   "version": "1.0.0",
-  "description": "Desafío Coder",
+  "description": "Desafío Coder. Sitio del emprendimiento de cuadernos y agendas artesanales Garza Bruja",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
