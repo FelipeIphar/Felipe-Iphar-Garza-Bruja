@@ -210,6 +210,7 @@ body {
 footer {
   display: flex;
   justify-content: start;
+  align-content: center;
   background-color: #af0000;
   height: 7vh;
   width: 100%;
@@ -218,11 +219,7 @@ footer img {
   display: inline-block;
   height: 70%;
   width: auto;
-  margin: 5px 5px 0px 5px;
-}
-
-#face {
-  background-color: white;
+  margin: 5px;
 }
 
 /**============Media Queries============**/
@@ -252,7 +249,7 @@ footer img {
 }
 @media only screen and (min-width: 768px) {
   .navbar-nav {
-    width: 65%;
+    width: 70%;
     justify-content: space-around;
     font-size: large;
   }
@@ -275,7 +272,7 @@ footer img {
     width: 85%;
   }
   .navbar-nav {
-    width: 50%;
+    width: 60%;
   }
   .parr {
     text-align: justify;
