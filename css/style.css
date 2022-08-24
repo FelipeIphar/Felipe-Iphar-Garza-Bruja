@@ -53,7 +53,7 @@ body {
   margin-bottom: 10px;
 }
 
-.article-flex, .subarticle {
+.article-flex {
   display: flex;
   width: 97%;
   height: auto;
@@ -64,16 +64,22 @@ body {
   flex-flow: wrap;
 }
 
-.subarticle {
+.subarticle, .subarticle-index {
   display: inline-block;
+  width: 97%;
+  height: auto;
   margin: 10px 5px;
   padding: 5px;
   background-color: #a82d01;
 }
-.subarticle img {
+.subarticle img, .subarticle-index img {
   width: 70%;
   display: block;
   margin: 10px auto;
+}
+
+.subarticle-index a {
+  color: white;
 }
 
 .parr {
@@ -106,6 +112,7 @@ body {
 
 .article__img {
   width: 85%;
+  height: auto;
   margin: 1rem;
 }
 .article__img:hover {
@@ -196,7 +203,7 @@ body {
 }
 
 .flex-vertical {
-  width: 20%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -240,7 +247,7 @@ footer img {
     font-size: small;
     padding: 0vh 1vh;
   }
-  .article-flex, .subarticle {
+  .article-flex {
     justify-content: space-around;
   }
   .card {
@@ -256,8 +263,11 @@ footer img {
   .carousel {
     width: 90%;
   }
-  .subarticle {
+  .subarticle, .subarticle-index {
     width: 30%;
+  }
+  .subarticle-index {
+    width: 48%;
   }
   .article__img {
     width: 45%;
