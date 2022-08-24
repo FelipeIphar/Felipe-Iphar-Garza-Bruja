@@ -155,12 +155,13 @@ body{
 /** Footer **/
 footer {
     display: flex;
-    justify-content: start;
-    align-content: center;
     background-color: map-get($colores, $key: footer);
     height: 7vh;
     width: 100%;
-    img{
+    a{
+        width: 40px;
+    }
+    a img{
         display: inline-block;
         height: 70%;
         width: auto;

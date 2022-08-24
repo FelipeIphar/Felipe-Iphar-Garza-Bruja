@@ -216,13 +216,14 @@ body {
 /** Footer **/
 footer {
   display: flex;
-  justify-content: start;
-  align-content: center;
   background-color: #af0000;
   height: 7vh;
   width: 100%;
 }
-footer img {
+footer a {
+  width: 40px;
+}
+footer a img {
   display: inline-block;
   height: 70%;
   width: auto;
